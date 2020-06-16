@@ -1,0 +1,98 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block title %}{% endblock %}
+    <link rel="Shortcut Icon" href="{% static 'image/logo.ico' %}" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'bootstrap-4.4.1-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sm_style.css' %}">
+</head>
+<body>
+<img class="loading" src="{% static 'image/loading.gif' %}" alt="">
+<div class="wrapper" id="wrapper" v-cloak>
+    <div class="top">
+        <div class="img_box_wrap"></div>
+        <div class="img_box"></div>
+        <button class="menu_btn"><span class="fa fa-align-justify"></span></button>
+        <div class="nav_box_wrap">
+            <div class="nav_content">
+                <div class="logo_box">
+                    <img src="{% static 'image/logo.png' %}" alt="">
+                </div>
+                <div class="nav_box">
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">.NetCore</a>
+                        </li>
+                        <li>
+                            <a href="">Css</a>
+                        </li>
+                        <li>
+                            <a href="">Python</a>
+                        </li>
+                        <li>
+                            <a href="">Go</a>
+                        </li>
+                        <li>
+                            <a href="">JavaScript</a>
+                        </li>
+                        <li>
+                            <a href="">SQL</a>
+                        </li>
+{#                        <li>#}
+{#                            <a href="">Math</a>#}
+{#                        </li>#}
+{#                        <li>#}
+{#                            <a href="">Political</a>#}
+{#                        </li>#}
+{#                        <li>#}
+{#                            <a href="">English</a>#}
+{#                        </li>#}
+                        <li>
+                            <a href="">Other</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            <h4 class="welcome">欢迎来到</h4>
+            <h2 class="welcome_content"><a href="">叶水源的博客</a></h2>
+            <h6 class="desc">一个记录自己学习过程的博客-by Water</h6>
+        </div>
+    </div>
+    <div class="main">
+      {% block Article %}{% endblock %}
+    </div>
+    <div class="footer">
+        <div class="foot_message">
+            <div class="foot_content">
+            <p class="foot_message_title">知识来自</p>
+                <p class="foot_content_desc">
+                    <span>>></span>
+                    <span class="foot_desc">不断的记录</span>
+                    <span><<</span>
+                </p>
+            </div>
+        </div>
+        <div class="footer_nav">
+            <p class="footer_nav_content">@ 迷茫的人生不需要解释,只看结果不看过程.</p>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.6.11/vue.js"></script>
+<script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

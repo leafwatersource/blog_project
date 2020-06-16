@@ -1,0 +1,80 @@
+@media screen and (max-width: 767px) {
+    .img_box {
+        background-position: 50%;
+    }
+    .nav_box {
+        background-color: black;
+    }
+    .nav_content {
+        padding: 6px 0;
+        width: 100%;
+    }
+    .message {
+        width: 90%;
+    }
+    .logo_box{
+        padding: 0 6px;
+    }
+    .logo_box img {
+        height: 30px;
+    }
+
+    .foot_message .foot_content {
+        width: 100%;
+    }
+
+    .main .ArticleList {
+        width: 90%;
+    }
+    .main .ArticleList li .article_title {
+        font-size: 18px;
+    }
+    .nav_content .nav_box{
+        top:50px;
+        display: none;
+        border-top: 1px solid white;
+        height: 50px;
+    }
+    .nav_content .nav_box.open{
+        display: block;
+    }
+    .nav_content .nav_box ul li {
+        float: inherit;
+        padding: 8px 0;
+    }
+    .nav_content .nav_box ul {
+        width: 100%;
+        margin-left: 0;
+        background-color: #212529;
+        height: auto;
+        padding: 0;
+    }
+    .nav_content .nav_box ul li{
+        width: 100%;
+    }
+    .nav_content .nav_box ul li {
+        line-height: inherit;
+    }
+    .foot_content_desc .foot_desc {
+        padding: 10px 44px;
+    }
+    .menu_btn{
+        display: block;
+        position: fixed;
+        z-index: 10;
+        right: 4px;
+        top:10px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        outline: none;
+    }
+    .nav_box_wrap {
+        height: 50px;
+    }
+}
+@media screen and (max-width: 1025px){
+    .main .ArticleList {
+        width: 90%;
+    }
+}
